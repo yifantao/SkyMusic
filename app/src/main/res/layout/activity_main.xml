@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fan.skymusic.MainActivity">
+
+    <com.fan.skymusic.PlayLayout
+        android:id="@+id/playLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/midContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lvDisp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </FrameLayout>
+
+        <com.fan.skymusic.SplitLayout
+            android:background="#00ffffff"
+            android:id="@+id/topSplit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.fan.skymusic.SplitLayout>
+
+        <com.fan.skymusic.SplitLayout
+            android:background="#00ffffff"
+            android:id="@+id/bottomSplit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.fan.skymusic.SplitLayout
+          >
+        <com.fan.skymusic.ControlPanel
+            android:scaleX="0"
+            android:scaleY="0"
+            android:background="#00ffffff"
+            android:id="@+id/controlPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.fan.skymusic.ControlPanel>
+    </com.fan.skymusic.PlayLayout>
+</RelativeLayout>
